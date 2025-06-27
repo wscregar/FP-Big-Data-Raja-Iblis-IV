@@ -28,4 +28,4 @@ Hasilnya akan ditampilkan melalui Streamlit, yaitu aplikasi web interaktif yang 
 
 `docker compose up`
 
-*script untuk menjalankan file nya sudah tertulis di dalam docker-compose.yml*
+*script untuk menjalankan file yang lain sudah tertulis di dalam docker-compose.yml*
