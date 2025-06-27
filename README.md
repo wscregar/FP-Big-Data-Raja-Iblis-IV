@@ -14,7 +14,7 @@ Dataset: https://www.kaggle.com/datasets/priyamchoksi/credit-card-transactions-d
 # Monitoring Credit Card Transaction
 
 ## Arsitektur
-![Frame 1](https://github.com/user-attachments/assets/7507728f-5603-41a2-8e69-a28a67b02d7a)
+![Frame 1 (1)](https://github.com/user-attachments/assets/7ef3a0b7-666b-43be-a77c-9f01c6bddc85)
 
 
 ##
