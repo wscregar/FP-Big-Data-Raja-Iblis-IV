@@ -24,4 +24,8 @@ Data yang sudah dibagi ke dalam batch disimpan ke MinIO, yaitu tempat penyimpana
 Hasilnya akan ditampilkan melalui Streamlit, yaitu aplikasi web interaktif yang memudahkan admin bank melihat data dan hasil deteksi secara langsung. Semua komponen ini dijalankan dalam container menggunakan Docker agar mudah diatur dan dijalankan di berbagai lingkungan.
 
 
-##
+## Cara Menjalankannya
+
+`docker compose up`
+
+*script untuk menjalankan file nya sudah tertulis di dalam docker-compose.yml*
