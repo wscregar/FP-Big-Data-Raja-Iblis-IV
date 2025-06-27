@@ -35,6 +35,8 @@ Dashboard ini dibuat dengan Streamlit dan digunakan oleh admin bank untuk memant
 - Auto-refresh Dashboard
 Pengguna dapat mengatur agar halaman dashboard memperbarui data secara otomatis setiap beberapa detik. Fitur ini penting agar admin bisa melihat data terbaru secara real-time tanpa perlu memuat ulang halaman secara manual.
 
+![Screenshot_2025-06-27_175632 1](https://github.com/user-attachments/assets/c3d475bd-ab2f-49e1-8fa5-10d573273588)
+
 
 - Pencarian Transaksi
 Di sidebar, terdapat fitur pencarian berdasarkan nama depan atau belakang nasabah, nama merchant, dan kategori transaksi. Ini membantu admin menyaring data tertentu dengan cepat.
@@ -44,6 +46,9 @@ Di sidebar, terdapat fitur pencarian berdasarkan nama depan atau belakang nasaba
 
 - Statistik Dataset
 Dashboard menampilkan ringkasan statistik seperti jumlah total transaksi dan jumlah transaksi yang terdeteksi sebagai fraud. Ini memberikan gambaran umum tentang skala dan tingkat kecurangan yang terpantau.
+
+![Screenshot_2025-06-27_175455 1](https://github.com/user-attachments/assets/6220146b-f5b1-4dce-b0df-0c0c48bdcaea)
+
 
 - Visualisasi Data
 Dashboard menyediakan grafik batang (bar chart) untuk menunjukkan distribusi kategori transaksi dan daftar merchant paling sering muncul. Hal ini membantu dalam memahami pola transaksi.
