@@ -35,8 +35,12 @@ Dashboard ini dibuat dengan Streamlit dan digunakan oleh admin bank untuk memant
 - Auto-refresh Dashboard
 Pengguna dapat mengatur agar halaman dashboard memperbarui data secara otomatis setiap beberapa detik. Fitur ini penting agar admin bisa melihat data terbaru secara real-time tanpa perlu memuat ulang halaman secara manual.
 
+
 - Pencarian Transaksi
 Di sidebar, terdapat fitur pencarian berdasarkan nama depan atau belakang nasabah, nama merchant, dan kategori transaksi. Ini membantu admin menyaring data tertentu dengan cepat.
+
+![Screenshot_2025-06-27_174227 1](https://github.com/user-attachments/assets/07f18e97-1ba2-4b64-8652-402e1b45b6f5)
+
 
 - Statistik Dataset
 Dashboard menampilkan ringkasan statistik seperti jumlah total transaksi dan jumlah transaksi yang terdeteksi sebagai fraud. Ini memberikan gambaran umum tentang skala dan tingkat kecurangan yang terpantau.
@@ -44,9 +48,23 @@ Dashboard menampilkan ringkasan statistik seperti jumlah total transaksi dan jum
 - Visualisasi Data
 Dashboard menyediakan grafik batang (bar chart) untuk menunjukkan distribusi kategori transaksi dan daftar merchant paling sering muncul. Hal ini membantu dalam memahami pola transaksi.
 
+![image](https://github.com/user-attachments/assets/120f0192-6168-4e0b-baf2-52699c2ad8b3)
+
+
 - Prediksi Transaksi Baru
 Admin bisa memasukkan data transaksi baru secara manual seperti jumlah uang (amt), kategori, merchant, dan gender pengguna. Setelah itu, sistem akan memprediksi apakah transaksi tersebut normal atau berpotensi fraud menggunakan model machine learning yang telah dilatih sebelumnya.
 
+Transaksi Normal:
+
+![Screenshot_2025-06-27_174511 1](https://github.com/user-attachments/assets/82c14853-8161-4e75-86da-b471404d4587)
+
+Transaksi Fraud:
+
+![Screenshot_2025-06-27_171903 1](https://github.com/user-attachments/assets/a22f29c5-0f77-473d-bc1c-464673e615f4)
+
+
 - Integrasi dengan MinIO
 Semua data transaksi (batch) dan model machine learning diambil langsung dari MinIO, sebuah penyimpanan objek mirip S3. Dengan ini, dashboard selalu menampilkan data terbaru yang disimpan dari hasil proses Kafka consumer.
+
+![Screenshot_2025-06-27_174905 1](https://github.com/user-attachments/assets/a2c4e076-4885-42d3-9475-887e83b09187)
 
