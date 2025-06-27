@@ -62,17 +62,18 @@ services:
       - minio-data:/data
     command: server /data --console-address ":9001"
 
-  spark-trainer:
-    image: bitnami/spark:latest
-    container_name: spark-trainer
+  trainer:
+    image: python:3.10-slim
+    container_name: model-trainer
     depends_on:
       - minio
     volumes:
       - ./training:/app/training
+      - ./models:/app/models  # opsional, kalau ingin simpan juga secara lokal
     working_dir: /app
     command: >
-      bash -c "pip install minio &&
-               spark-submit training/train_model.py"
+      sh -c "pip install pandas scikit-learn minio joblib &&
+             python training/train_model.py"
 
   dashboard:
     image: python:3.10-slim
@@ -85,8 +86,9 @@ services:
     depends_on:
       - minio
     command: >
-      sh -c "pip install streamlit pandas minio pyspark &&
-            streamlit run app.py --server.port=8501 --server.address=0.0.0.0"
+      sh -c "pip install streamlit pandas minio joblib scikit-learn &&
+             streamlit run app.py --server.port=8501 --server.address=0.0.0.0"
+
 
 volumes:
   minio-data:
