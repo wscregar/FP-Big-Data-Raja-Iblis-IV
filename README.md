@@ -14,7 +14,8 @@ Dataset: https://www.kaggle.com/datasets/priyamchoksi/credit-card-transactions-d
 # Monitoring Credit Card Transaction
 
 ## Arsitektur
-![Frame 1 (1)](https://github.com/user-attachments/assets/7ef3a0b7-666b-43be-a77c-9f01c6bddc85)
+
+![Image](https://github.com/user-attachments/assets/97fe739f-077e-446b-b5f5-f8a229193b3b)
 
 Sistem ini dirancang untuk mendeteksi transaksi mencurigakan secara otomatis dan berjalan secara berkelanjutan. Alurnya dimulai dari data transaksi yang masuk melalui Kafka (streaming layer). Di sini, bagian consumer akan mengambil data secara bertahap (per 1000 baris) agar lebih mudah diproses.
 
